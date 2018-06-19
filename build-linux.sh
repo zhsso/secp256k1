@@ -2,4 +2,4 @@
 
 rm -rf "build"
 cmake -H. -Bbuild
-cmake --build ./build --target secp256k1 --config RelWithDebInfo -- -j 4
+cmake --build ./build --target secp256k1 --config RelWithDebInfo
