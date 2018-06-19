@@ -15,4 +15,4 @@ if "%1" == "x86" (
 
 rd /s /q "build_%arch%"
 cmake -H. -Bbuild_%arch% -G %cmake_gen%
-cmake --build ./build_%arch% --target secp256k1 --config RelWithDebInfo
+cmake --build ./build_%arch% --target secp256k1 --config Release
