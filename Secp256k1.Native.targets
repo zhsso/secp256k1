@@ -29,8 +29,12 @@
     </Content>
     -->
 
-    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\*" CopyToOutputDirectory="PreserveNewest" PackageCopyToOutput="true">
-      <Link>libdir\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <LinkBase>runtimes</LinkBase>
+      <Link>runtimes\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <NuGetRecursiveDir>%(Link)</NuGetRecursiveDir>
     </Content>
 
   </ItemGroup>
