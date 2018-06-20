@@ -4,24 +4,28 @@
     <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-x64\native\secp256k1.dll" PackageCopyToOutput="true">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>native\win-x64\secp256k1.dll</Link>
+      <PackagePath>native\win-x64\secp256k1.dll</PackagePath>
       <Visible>true</Visible>
       <Pack>true</Pack>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-x86\native\secp256k1.dll" PackageCopyToOutput="true">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>native\win-x86\secp256k1.dll</Link>
+      <PackagePath>native\win-x86\secp256k1.dll</PackagePath>
       <Visible>true</Visible>
       <Pack>true</Pack>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\linux-x64\native\libsecp256k1.so" PackageCopyToOutput="true">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>native\linux-x64\libsecp256k1.so</Link>
+      <PackagePath>native\linux-x64\libsecp256k1.so</PackagePath>
       <Visible>true</Visible>
       <Pack>true</Pack>
     </Content>
     <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\osx-x64\native\libsecp256k1.dylib" PackageCopyToOutput="true">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>native\osx-x64\libsecp256k1.dylib</Link>
+      <PackagePath>native\osx-x64\libsecp256k1.dylib</PackagePath>
       <Visible>true</Visible>
       <Pack>true</Pack>
     </Content>
