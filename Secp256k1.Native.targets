@@ -29,7 +29,9 @@
     </Content>
     -->
 
-    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\*" LinkBase="runtimes" CopyToOutputDirectory="PreserveNewest"  PackageCopyToOutput="true"/>
+    <Content Include="$(MSBuildThisFileDirectory)..\..\runtimes\**\*" CopyToOutputDirectory="PreserveNewest" PackageCopyToOutput="true">
+      <Link>libdir\%(RecursiveDir)%(Filename)%(Extension)</Link>
+    </Content>
 
   </ItemGroup>
 </Project>
